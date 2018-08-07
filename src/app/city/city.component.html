@@ -1,0 +1,7 @@
+<div style="width:100%; height: 30px;">
+<label style="width:500px;">City: </label>
+<select [(ngModel)]="cityname" (change)="oncitychange()">
+  <option value="0">--Select--</option>
+  <option *ngFor="let city of filteredCities" value={{city.id}}>{{city.name}}</option>
+ </select>
+</div>

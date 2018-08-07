@@ -1,0 +1,7 @@
+<div style="width:100%; height: 30px;">
+<label style="width:500px;">State: </label>
+<select [(ngModel)]="sname" (change)="onstatechange()">
+  <option value="0">--Select--</option>
+  <option *ngFor="let state of filteredStates" value={{state.sid}}>{{state.name}}</option>
+ </select>
+</div>
